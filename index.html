@@ -83,36 +83,30 @@
 </section>
 
 <!-- Estilo para espaçamento e blocos -->
+<!-- Estilo para espaçamento e blocos -->
 <style>
-   :root {
-  --cor-espaco: #ffffff;
-  --cor-espaco-small: #ffffff;
-}
+  :root {
+    --cor-espaco: #ffffff;
+    --cor-espaco-small: #ffffff;
+  }
 
-.spaco-banner {
-  height: 12vw;
-  background-color: var(--cor-espaco);
-  margin: 0;
-  padding: 0;
-}
-
-@media screen and (max-width: 768px) {
   .spaco-banner {
-    height: 0.6vw;
-    background-color: var(--cor-espaco-small);
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .spaco-banner {
-    height: 2vh;
+    height: 12vw;
+    background-color: var(--cor-espaco);
+    margin: 0;
+    padding: 0;
   }
 
-  #banner h2 {
-    font-size: 4.5vw !important;
-  }
-}
+  @media screen and (max-width: 768px) {
+    .spaco-banner {
+      height: 0.6vw;
+      background-color: var(--cor-espaco-small);
+    }
 
+    #banner h2 {
+      font-size: 4.5vw !important;
+    }
+  }
 
   .blocos-info-full {
     background-color: #ffffff;
@@ -166,6 +160,14 @@
 
     .blocos-info-full .cards article {
       flex: 1 1 100%;
+    }
+  }
+
+  /* Adicionado: Estilos exclusivos para celulares (até 480px) */
+  @media screen and (max-width: 480px) {
+    .spaco-banner {
+      height: 2vh;
+      background-color: var(--cor-espaco-small);
     }
   }
 </style>
