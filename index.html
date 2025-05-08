@@ -84,28 +84,35 @@
 
 <!-- Estilo para espaçamento e blocos -->
 <style>
-  :root {
-    --cor-espaco: #ffffff;
-    --cor-espaco-small: #ffffff;
-  }
+   :root {
+  --cor-espaco: #ffffff;
+  --cor-espaco-small: #ffffff;
+}
 
+.spaco-banner {
+  height: 12vw;
+  background-color: var(--cor-espaco);
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
   .spaco-banner {
-    height: 9vw;
-    background-color: var(--cor-espaco);
-    margin: 0;
-    padding: 0;
+    height: 0.6vw;
+    background-color: var(--cor-espaco-small);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .spaco-banner {
+    height: 2vh;
   }
 
-  @media screen and (max-width: 768px) {
-    .spaco-banner {
-      height: 0.5vw;
-      background-color: var(--cor-espaco-small);
-    }
-
-    #banner h2 {
-      font-size: 4.5vw !important;
-    }
+  #banner h2 {
+    font-size: 4.5vw !important;
   }
+}
+
 
   .blocos-info-full {
     background-color: #ffffff;
