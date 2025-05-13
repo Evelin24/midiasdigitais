@@ -84,27 +84,40 @@
 
 <!-- Estilo para espaçamento e blocos -->
 <!-- Estilo para espaçamento e blocos -->
+<!-- Estilo para espaçamento e blocos -->
 <style>
   :root {
     --cor-espaco: #ffffff;
     --cor-espaco-small: #ffffff;
   }
 
+  /* Espaço entre o banner e os blocos - agora responsivo */
   .spaco-banner {
-    height: 12vw;
+    height: 4em;
     background-color: var(--cor-espaco);
     margin: 0;
     padding: 0;
   }
 
+  @media screen and (max-width: 1024px) {
+    .spaco-banner {
+      height: 3em;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     .spaco-banner {
-      height: 0.6vw;
-      background-color: var(--cor-espaco-small);
+      height: 2em;
     }
 
     #banner h2 {
       font-size: 4.5vw !important;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .spaco-banner {
+      height: 1.5em;
     }
   }
 
@@ -162,15 +175,8 @@
       flex: 1 1 100%;
     }
   }
-
-  /* Adicionado: Estilos exclusivos para celulares (até 480px) */
-  @media screen and (max-width: 480px) {
-    .spaco-banner {
-      height: 0.6vh;
-      background-color: var(--cor-espaco-small);
-    }
-  }
 </style>
+
 
 
 
