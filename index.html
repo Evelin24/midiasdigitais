@@ -85,18 +85,25 @@
 <!-- Estilo para espaçamento e blocos -->
 <!-- Estilo para espaçamento e blocos -->
 <!-- Estilo para espaçamento e blocos -->
+<!-- Estilo para espaçamento e blocos -->
 <style>
   :root {
     --cor-espaco: #ffffff;
     --cor-espaco-small: #ffffff;
   }
 
-  /* Espaço entre o banner e os blocos - agora responsivo */
   .spaco-banner {
-    height: 10em;
+    height: 4em;
     background-color: var(--cor-espaco);
     margin: 0;
     padding: 0;
+  }
+
+  /* Para telas grandes, como 1920x1080 */
+  @media screen and (min-width: 1440px) {
+    .spaco-banner {
+      height: 6em;
+    }
   }
 
   @media screen and (max-width: 1024px) {
@@ -118,6 +125,7 @@
   @media screen and (max-width: 480px) {
     .spaco-banner {
       height: 1.5em;
+      background-color: var(--cor-espaco-small);
     }
   }
 
@@ -176,6 +184,7 @@
     }
   }
 </style>
+
 
 
 
